@@ -232,8 +232,10 @@ function DecisionReasonDialog({ actionName, submission, reason, setReason, issue
   return (
     <div className="fixed inset-0 z-100 flex items-end justify-center sm:items-center sm:p-6">
       <div className="absolute inset-0 bg-ink-950/40 backdrop-blur-[2px]" onClick={onCancel} aria-hidden="true" />
-      <div className="panel relative w-full max-w-lg shadow-overlay">
-        <div className="px-6 pt-5 pb-4">
+      {/* Capped to the viewport and internally scrollable so the footer
+          actions stay reachable on short screens. */}
+      <div className="panel relative flex max-h-[92dvh] w-full max-w-lg flex-col shadow-overlay">
+        <div className="shrink-0 px-6 pt-5 pb-4">
           <h2 className="text-base font-semibold text-ink-900">{t.label}</h2>
           <p className="mt-1.5 text-sm leading-relaxed text-ink-600">
             {t.label} “{submission.title}”. The status will change to{' '}
@@ -242,7 +244,7 @@ function DecisionReasonDialog({ actionName, submission, reason, setReason, issue
           </p>
         </div>
 
-        <div className="space-y-4 px-6 pb-5">
+        <div className="scrollbar-slim min-h-0 flex-1 space-y-4 overflow-y-auto px-6 pb-5">
           {needsIssue && (
             <div>
               <label className="label" htmlFor="pub-issue">
@@ -285,7 +287,7 @@ function DecisionReasonDialog({ actionName, submission, reason, setReason, issue
           </div>
         </div>
 
-        <div className="flex justify-end gap-2.5 rounded-b-xl border-t border-ink-200 bg-ink-50/60 px-6 py-4">
+        <div className="flex shrink-0 justify-end gap-2.5 rounded-b-xl border-t border-ink-200 bg-ink-50/60 px-6 py-4">
           <button onClick={onCancel} className="btn-secondary">
             Cancel
           </button>

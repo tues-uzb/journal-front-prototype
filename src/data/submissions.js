@@ -707,6 +707,282 @@ export const submissions = [
       activity(ACTIVITY.SUBMISSION_CREATED, 'Draft created by the author.', 'Dr. Amara Nwosu', 'AUTHOR', '2026-09-28'),
     ],
   },
+
+  // ══ 12. New submission, unassigned editor ════════════════════════════
+  {
+    id: 'JASSD-2026-0149',
+    title: 'Digital Health Interventions and Continuity of Care in Rural Primary Health Systems',
+    abstract:
+      'Digital health interventions are widely promoted as a route to strengthening primary care in resource-constrained rural settings, but evidence on their effect on continuity of care is limited. This mixed-methods study combines a cluster randomised trial in 24 rural health centres across three provinces with 62 in-depth interviews with patients, nurses and district managers. Clinics assigned to the digital package showed a 19% improvement in treatment-continuity index scores at six months, with the largest gains among patients living more than five kilometres from a facility. Interviews indicate that the benefit was driven less by the technology itself than by the reminder and follow-up protocols it enabled. We argue that digital health investment should be evaluated on the care pathways it supports rather than on adoption metrics.',
+    keywords: ['Digital Health', 'Primary Care', 'Rural Health Systems', 'Continuity of Care', 'Health Informatics'],
+    status: S.SUBMITTED,
+    articleType: 'Research Article',
+    section: 'Biomedical Engineering',
+    submitted: '2026-09-27',
+    lastActivity: '2026-09-27',
+    assignedEditorId: null,
+    authors: [
+      author('a-25', 'Dr. Grace Mbeki', 'g.mbeki@uct.ac.za', 'University of Cape Town', 1, true, 'South Africa'),
+      author('a-26', 'Dr. Sunil Prasad', 's.prasad@ntu.ac.in', 'National University of Singapore', 2, false, 'Singapore'),
+      author('a-27', 'Dr. Samuel Adeyinka', 's.adeyinka@unilag.edu.ng', 'University of Lagos', 3, false, 'Nigeria'),
+    ],
+    reviews: [],
+    files: [
+      file('Manuscript_JASSD-2026-0149.pdf', 'Manuscript', 'PDF', 1, '2026-09-27', 'Dr. Grace Mbeki', 4420),
+      file('Figures_1-7.zip', 'Figures', 'ZIP', 1, '2026-09-27', 'Dr. Grace Mbeki', 24600),
+      file('Trial_Registration.pdf', 'Supplementary', 'PDF', 1, '2026-09-27', 'Dr. Sunil Prasad', 720),
+    ],
+    activity: [
+      activity(ACTIVITY.SUBMISSION_RECEIVED, 'Manuscript submitted to the journal.', 'Dr. Grace Mbeki', 'AUTHOR', '2026-09-27'),
+    ],
+  },
+
+  // ══ 13. Under review, all reports in ════════════════════════════════
+  {
+    id: 'JASSD-2026-0140',
+    title: 'Assessing the Trade-Offs Between Water Saving and Crop Yield in Irrigated Agriculture',
+    abstract:
+      'Water-saving technologies such as drip irrigation and sensor-based scheduling are promoted as the principal route to agricultural water efficiency, but their effect on yields is contested. This study analyses four seasons of paired plot data from 12 experimental stations to quantify the yield penalty associated with progressively tighter irrigation schedules. Under mild deficit irrigation (90–70% of evapotranspiration) yields fell by 4.2% on average, but water productivity rose by 17%. Beyond a threshold of approximately 60% of evapotranspiration, yields declined non-linearly while water productivity plateaued, indicating that the efficiency gains offered by further restriction are illusory. We argue that deficit irrigation policy should be framed around explicit yield trade-offs rather than presented as a cost-free efficiency gain.',
+    keywords: ['Irrigation', 'Water Productivity', 'Crop Yield', 'Deficit Irrigation', 'Agricultural Water Management'],
+    status: S.UNDER_REVIEW,
+    articleType: 'Research Article',
+    section: 'Agricultural Systems',
+    submitted: '2026-07-30',
+    lastActivity: '2026-09-18',
+    assignedEditorId: 'u-ed-6',
+    authors: [
+      author('a-28', 'Dr. Fatma Zahra Alaoui', 'f.alaoui@um6p.ma', 'Mohammed VI Polytechnic University', 1, true, 'Morocco'),
+      author('a-29', 'Dr. Nabil Farouk', 'n.farouk@auc.edu.eg', 'American University in Cairo', 2, false, 'Egypt'),
+    ],
+    reviews: [
+      review({
+        reviewerId: 'u-rv-10',
+        status: 'SUBMITTED',
+        invited: '2026-08-14',
+        responded: '2026-08-15',
+        deadline: '2026-09-04',
+        submitted: '2026-09-02',
+        recommendation: 'minor-revisions',
+        summary:
+          'A well-designed station trial addressing a question of real practical importance. The threshold analysis is the strongest element and deserves clearer emphasis.',
+        commentsToAuthor:
+          'This is a careful and practically useful study. The central finding — that water productivity plateaus once irrigation falls below roughly 60% of evapotranspiration — is one that policy documents frequently get wrong, and the experimental support here is welcome.\n\n1. Please report the threshold estimate with a confidence interval, and test its sensitivity to the smoothing bandwidth used to detect the knee point.\n2. The four-season design is well used, but the third season experienced an unusually wet period. The authors should clarify how this affected treatment application.\n3. Section 3.2 conflates field water productivity with basin-level water productivity in a way that could mislead readers. Please separate them.\n\nMinor revisions only.',
+        commentsToEditor: 'Solid and relevant. Recommend acceptance after the threshold uncertainty is quantified.',
+      }),
+      review({
+        reviewerId: 'u-rv-6',
+        status: 'SUBMITTED',
+        invited: '2026-08-14',
+        responded: '2026-08-16',
+        deadline: '2026-09-04',
+        submitted: '2026-09-05',
+        recommendation: 'accept',
+        summary:
+          'Useful and clearly written. The policy implications are stated proportionately and are well supported.',
+        commentsToAuthor:
+          'A useful contribution that addresses a common policy misconception. I have no substantive concerns.\n\nMinor points only: Table 4 would benefit from units in the column headers, and the abbreviation list should include ETc, which is used before definition.\n\nI recommend acceptance.',
+        commentsToEditor: 'Recommend acceptance. Good fit for the agricultural systems section.',
+      }),
+      review({
+        reviewerId: 'u-rv-1',
+        status: 'ACCEPTED',
+        invited: '2026-08-14',
+        responded: '2026-08-18',
+        deadline: '2026-09-25',
+      }),
+    ],
+    files: [
+      file('Manuscript_JASSD-2026-0140.pdf', 'Manuscript', 'PDF', 1, '2026-07-30', 'Dr. Fatma Zahra Alaoui', 3760),
+      file('Figures_1-6.zip', 'Figures', 'ZIP', 1, '2026-07-30', 'Dr. Fatma Zahra Alaoui', 18900),
+      file('Cover_Letter.pdf', 'Cover Letter', 'PDF', 1, '2026-07-30', 'Dr. Fatma Zahra Alaoui', 205),
+    ],
+    activity: [
+      activity(ACTIVITY.SUBMISSION_RECEIVED, 'Manuscript submitted to the journal.', 'Dr. Fatma Zahra Alaoui', 'AUTHOR', '2026-07-30'),
+      activity(ACTIVITY.EDITOR_ASSIGNED, 'Assigned to Dr. Nabil Farouk as handling editor.', 'Dr. Miriam Okonkwo', 'ADMIN', '2026-08-01'),
+      activity(ACTIVITY.SENT_TO_REVIEW, 'Sent for external peer review.', 'Dr. Nabil Farouk', 'EDITOR', '2026-08-12'),
+      activity(ACTIVITY.REVIEWER_INVITED, 'Invited Dr. Fatima Zahra Alaoui, Dr. Ravi Deshmukh and Dr. Ingrid Halvorsen to review.', 'Dr. Nabil Farouk', 'EDITOR', '2026-08-14'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Review submitted by Dr. Fatima Zahra Alaoui — recommendation: minor revisions.', 'Dr. Fatima Zahra Alaoui', 'REVIEWER', '2026-09-02'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Review submitted by Dr. Ravi Deshmukh — recommendation: accept.', 'Dr. Ravi Deshmukh', 'REVIEWER', '2026-09-05'),
+      activity(ACTIVITY.REVIEWER_ACCEPTED, 'Dr. Ingrid Halvorsen accepted the invitation.', 'Dr. Ingrid Halvorsen', 'REVIEWER', '2026-08-18'),
+    ],
+  },
+
+  // ══ 14. Second round after revision ══════════════════════════════════
+  {
+    id: 'JASSD-2026-0133',
+    title: 'Life Cycle Assessment of Renewable Energy Systems: A Critical Review of Boundary Selection',
+    abstract:
+      'Published life cycle assessments of renewable energy systems vary substantially in their results, and a recurring source of divergence is the selection of system boundaries. This critical review examines 148 LCA studies of wind, solar and hydropower published between 2010 and 2024, coding each for boundary choices across construction, operation, decommissioning, and grid infrastructure. We find that construction-phase assumptions account for the largest share of between-study variance, exceeding operational parameters. Studies applying harmonised boundary rules yield materially narrower result ranges. The review provides a reporting checklist intended to make future cross-technology comparisons more robust.',
+    keywords: ['Life Cycle Assessment', 'Renewable Energy', 'System Boundaries', 'Sustainability Assessment', 'Energy Systems'],
+    status: S.UNDER_REVIEW,
+    articleType: 'Review Article',
+    section: 'Sustainable Development',
+    submitted: '2026-06-24',
+    lastActivity: '2026-09-24',
+    assignedEditorId: 'u-ed-1',
+    authors: [
+      author('a-30', 'Dr. Lars Sørensen', 'l.sorensen@au.dk', 'Aarhus University', 1, true, 'Denmark'),
+      author('a-31', 'Dr. Henrik Lund', 'h.lund@ku.dk', 'University of Copenhagen', 2, false, 'Denmark'),
+    ],
+    reviews: [
+      review({
+        reviewerId: 'u-rv-9',
+        status: 'SUBMITTED',
+        invited: '2026-07-15',
+        responded: '2026-07-16',
+        deadline: '2026-08-05',
+        submitted: '2026-08-01',
+        recommendation: 'major-revisions',
+        summary:
+          'The underlying corpus is valuable, but the coding scheme needs to be applied consistently and the variance decomposition justified.',
+        commentsToAuthor:
+          'A useful and timely review, and the 148-study corpus is a substantial contribution. My concern is methodological consistency.\n\n1. The coding of boundary categories appears to allow multiple codes per study in some cases and single codes in others. The rules for this need to be stated explicitly, and inter-rater agreement reported.\n\n2. The variance decomposition is the paper\'s key claim and needs a stronger justification. Why should boundary selection be expected to dominate, and has this been tested rather than asserted?\n\n3. Round two of this review: the manuscript has been substantially revised since my first report. The coding appendix is a genuine improvement. However, two studies in my sample remain uncoded and the variance decomposition still relies on a single regression specification.\n\nI would support publication once the remaining coding gaps are closed.',
+        commentsToEditor: 'The revision has addressed most of my concerns. Two coding gaps remain but these are minor. I do not wish to block publication over them.',
+      }),
+      review({
+        reviewerId: 'u-rv-13',
+        status: 'SUBMITTED',
+        invited: '2026-07-15',
+        responded: '2026-07-17',
+        deadline: '2026-08-05',
+        submitted: '2026-08-03',
+        recommendation: 'minor-revisions',
+        summary: 'The reporting checklist is practical and likely to be adopted by the field.',
+        commentsToAuthor:
+          'I welcome this review. The checklist in Table 6 is the most immediately useful output and I would encourage the authors to circulate it more widely.\n\n1. The checklist would be more usable if each item specified the reporting unit and time horizon, not just the parameter.\n2. Please add a short worked example applying the checklist to a single technology.\n3. Round two: the worked example has been added, which resolves my earlier concern about usability. I am satisfied with this point.\n\nMinor revisions only.',
+        commentsToEditor: 'Recommend acceptance. The checklist alone justifies publication.',
+      }),
+    ],
+    files: [
+      file('Manuscript_JASSD-2026-0133.pdf', 'Manuscript', 'PDF', 1, '2026-06-24', 'Dr. Lars Sørensen', 5210),
+      file('Manuscript_JASSD-2026-0133_rev1.pdf', 'Manuscript', 'PDF', 2, '2026-08-28', 'Dr. Lars Sørensen', 5640, 'Revised with coding appendix'),
+      file('Coding_Appendix.xlsx', 'Supplementary', 'XLSX', 2, '2026-08-28', 'Dr. Henrik Lund', 3860),
+      file('Cover_Letter.pdf', 'Cover Letter', 'PDF', 1, '2026-06-24', 'Dr. Lars Sørensen', 180),
+    ],
+    activity: [
+      activity(ACTIVITY.SUBMISSION_RECEIVED, 'Manuscript submitted to the journal.', 'Dr. Lars Sørensen', 'AUTHOR', '2026-06-24'),
+      activity(ACTIVITY.EDITOR_ASSIGNED, 'Assigned to Prof. Elena Marchetti as handling editor.', 'Dr. Miriam Okonkwo', 'ADMIN', '2026-06-27'),
+      activity(ACTIVITY.SENT_TO_REVIEW, 'Sent for external peer review.', 'Prof. Elena Marchetti', 'EDITOR', '2026-07-14'),
+      activity(ACTIVITY.REVIEWER_INVITED, 'Invited Dr. Henrik Lund and Dr. Isabel Moreno to review.', 'Prof. Elena Marchetti', 'EDITOR', '2026-07-15'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Round 1 review submitted by Dr. Henrik Lund — recommendation: major revisions.', 'Dr. Henrik Lund', 'REVIEWER', '2026-08-01'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Round 1 review submitted by Dr. Isabel Moreno — recommendation: minor revisions.', 'Dr. Isabel Moreno', 'REVIEWER', '2026-08-03'),
+      activity(ACTIVITY.REVISION_REQUESTED, 'Major revisions requested from the author.', 'Prof. Elena Marchetti', 'EDITOR', '2026-08-06', 'Coding scheme consistency and the variance decomposition require a firmer methodological basis.'),
+      activity(ACTIVITY.REVISION_UPLOADED, 'Revised manuscript uploaded by the author (version 2).', 'Dr. Lars Sørensen', 'AUTHOR', '2026-08-28'),
+      activity(ACTIVITY.SENT_TO_REVIEW, 'Returned to the same reviewers for a second round.', 'Prof. Elena Marchetti', 'EDITOR', '2026-09-05'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Round 2 review submitted by Dr. Henrik Lund — recommendation: minor revisions.', 'Dr. Henrik Lund', 'REVIEWER', '2026-09-22'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Round 2 review submitted by Dr. Isabel Moreno — recommendation: minor revisions.', 'Dr. Isabel Moreno', 'REVIEWER', '2026-09-24'),
+    ],
+  },
+
+  // ══ 15. Rejected after a second round ════════════════════════════════
+  {
+    id: 'JASSD-2026-0119',
+    title: 'Social Media Engagement and Academic Reputation: A Quantitative Meta-Analysis',
+    abstract:
+      'The relationship between social media engagement and measures of academic reputation remains poorly characterised. This meta-analysis synthesises 96 studies reporting correlations between researcher social media activity and citation-based or survey-based reputation measures. A small but statistically significant positive association is observed overall (r = 0.11), but the effect is substantially smaller when restricted to studies controlling for field and career stage. We find evidence of strong publication bias, with the asymmetry test approaching significance, and note that 43 of the included studies report effect sizes that cannot be reproduced from the underlying data.',
+    keywords: ['Social Media', 'Academic Reputation', 'Meta-Analysis', 'Citation Impact', 'Altmetrics'],
+    status: S.REJECTED,
+    articleType: 'Review Article',
+    section: 'Research Policy',
+    submitted: '2026-04-22',
+    lastActivity: '2026-07-29',
+    assignedEditorId: 'u-ed-5',
+    authors: [
+      author('a-32', 'Dr. Elena Ruiz', 'e.ruiz@unam.mx', 'Universidad Nacional Autónoma de México', 1, true, 'Mexico'),
+      author('a-33', 'Dr. Michael Osei', 'm.osei@uew.edu.gh', 'University of Education, Winneba', 2, false, 'Ghana'),
+    ],
+    reviews: [
+      review({
+        reviewerId: 'u-rv-14',
+        status: 'SUBMITTED',
+        invited: '2026-05-12',
+        responded: '2026-05-13',
+        deadline: '2026-06-02',
+        submitted: '2026-05-28',
+        recommendation: 'reject',
+        summary:
+          'The data quality problems are serious enough that the pooled estimate cannot be interpreted. Several effect sizes appear unreproducible.',
+        commentsToAuthor:
+          'I have concerns that go beyond the usual requests for revision, and I do not think the pooled estimate in the current form can be interpreted.\n\n1. Reproducibility: At least 43 of the 96 included studies report effect sizes that cannot be reproduced from the underlying data. This is not a minor concern — it suggests either systematic extraction error or more serious problems in the primary literature. The authors should attempt to reproduce the full set, not a sample.\n\n2. Publication bias: The authors note the asymmetry test approaches significance but proceed to interpret the pooled estimate. With a corpus of this size and this quality, the funnel plot cannot be treated as reassuring.\n\n3. Framing: A correlation of r = 0.11, once the field and career-stage controls are applied, is very close to nothing. Presenting it as a meaningful relationship overstates the finding.\n\nI would encourage the authors to treat this as a data-quality commentary rather than a meta-analysis.',
+        commentsToEditor: 'The reproducibility problems are extensive. I do not think this belongs in the journal in its current form.',
+      }),
+      review({
+        reviewerId: 'u-rv-5',
+        status: 'SUBMITTED',
+        invited: '2026-05-12',
+        responded: '2026-05-14',
+        deadline: '2026-06-02',
+        submitted: '2026-05-30',
+        recommendation: 'major-revisions',
+        summary: 'Interesting question, but the extraction methodology needs to be auditable before the results can be trusted.',
+        commentsToAuthor:
+          'I agree with the underlying concern about the literature, and a piece examining that would be valuable. The problem is that the current manuscript attempts to pool the results as though the corpus were sound.\n\n1. The extraction protocol needs to be fully specified and the extraction sheet released as supplementary material.\n2. A sensitivity analysis excluding studies with unreproducible effect sizes should be reported.\n3. The interpretation section should be substantially more cautious.\n\nMajor revisions would be needed, and I am not confident the pooled analysis would survive them.',
+        commentsToEditor: 'A worthwhile question, but I agree the current analysis is not defensible.',
+      }),
+    ],
+    files: [
+      file('Manuscript_JASSD-2026-0119.pdf', 'Manuscript', 'PDF', 1, '2026-04-22', 'Dr. Elena Ruiz', 4180),
+      file('Cover_Letter.pdf', 'Cover Letter', 'PDF', 1, '2026-04-22', 'Dr. Elena Ruiz', 190),
+    ],
+    activity: [
+      activity(ACTIVITY.SUBMISSION_RECEIVED, 'Manuscript submitted to the journal.', 'Dr. Elena Ruiz', 'AUTHOR', '2026-04-22'),
+      activity(ACTIVITY.EDITOR_ASSIGNED, 'Assigned to Dr. Hannah Whitfield as handling editor.', 'Dr. Miriam Okonkwo', 'ADMIN', '2026-04-25'),
+      activity(ACTIVITY.SENT_TO_REVIEW, 'Sent for external peer review.', 'Dr. Hannah Whitfield', 'EDITOR', '2026-05-11'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Review submitted by Dr. Michael Osei — recommendation: reject.', 'Dr. Michael Osei', 'REVIEWER', '2026-05-28'),
+      activity(ACTIVITY.REVIEW_SUBMITTED, 'Review submitted by Dr. Amelia Foster — recommendation: major revisions.', 'Dr. Amelia Foster', 'REVIEWER', '2026-05-30'),
+      activity(
+        ACTIVITY.SUBMISSION_REJECTED,
+        'Manuscript declined following peer review.',
+        'Dr. Hannah Whitfield',
+        'EDITOR',
+        '2026-07-29',
+        'Both reviewers identify extensive reproducibility problems in the primary corpus. The pooled estimate cannot be interpreted. A reframed submission examining data quality in this literature — rather than pooling it — may be worthwhile.',
+      ),
+    ],
+  },
+
+  // ══ 16. Published via direct publication (society proceedings) ═══════
+  {
+    id: 'JASSD-2026-0144',
+    title: 'Proceedings of the 12th International Symposium on Sustainable Agriculture Systems',
+    abstract:
+      'These proceedings collect 14 extended abstracts presented at the 12th International Symposium on Sustainable Agriculture Systems, held in Cape Town from 3 to 6 March 2026. Contributions span precision irrigation scheduling, integrated pest management, soil carbon monitoring and agricultural extension under climate stress. Extended abstracts are published without external peer review following presentation and editorial screening.',
+    keywords: ['Proceedings', 'Sustainable Agriculture', 'Conference', 'Extended Abstracts', 'Research Networks'],
+    status: S.PUBLISHED,
+    articleType: 'Short Communication',
+    section: 'Agricultural Systems',
+    submitted: '2026-08-20',
+    lastActivity: '2026-09-20',
+    assignedEditorId: 'u-ed-2',
+    doi: '10.48291/jassd.2026.0144',
+    issueId: 'iss-12-3',
+    publishedDate: '2026-09-20',
+    volume: '12',
+    issueNumber: '3',
+    pages: '169–201',
+    directPublication: true,
+    directPublicationReason: 'Society proceedings paper',
+    authors: [
+      author('a-34', 'Dr. Samuel Adeyinka', 's.adeyinka@unilag.edu.ng', 'University of Lagos', 1, true, 'Nigeria'),
+      author('a-35', 'Prof. Deborah Wanjiru', 'd.wanjiru@jkuat.ac.ke', 'Jomo Kenyatta University of Agriculture and Technology', 2, false, 'Kenya'),
+    ],
+    reviews: [],
+    files: [
+      file('Proceedings_Abstracts.pdf', 'Manuscript', 'PDF', 1, '2026-08-20', 'Dr. Samuel Adeyinka', 6240, 'Consolidated extended abstracts'),
+      file('Cover_Letter.pdf', 'Cover Letter', 'PDF', 1, '2026-08-20', 'Dr. Samuel Adeyinka', 175),
+    ],
+    activity: [
+      activity(ACTIVITY.SUBMISSION_RECEIVED, 'Society proceedings submitted for publication.', 'Dr. Samuel Adeyinka', 'AUTHOR', '2026-08-20'),
+      activity(
+        ACTIVITY.DIRECT_PUBLICATION,
+        'Article published directly by Administrator.',
+        'Dr. Miriam Okonkwo',
+        'ADMIN',
+        '2026-09-20',
+        'Society proceedings paper',
+      ),
+    ],
+  },
 ]
 
 // Attach submission ids to nested records so detail pages can look them up.

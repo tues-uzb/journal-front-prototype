@@ -21,6 +21,8 @@ export const issues = [
     status: 'published',
     editorId: 'u-ed-2',
     articleIds: ['JASSD-2026-0105'],
+    coverNote:
+      'Includes the meta-analysis of conservation agriculture trials that was shortlisted for the society research prize.',
   },
   {
     id: 'iss-12-2',
@@ -46,7 +48,7 @@ export const issues = [
     publicationDate: '2026-09-18',
     status: 'published',
     editorId: 'u-ed-3',
-    articleIds: ['JASSD-2026-0141', 'JASSD-2026-0143'],
+    articleIds: ['JASSD-2026-0141', 'JASSD-2026-0143', 'JASSD-2026-0144'],
   },
   {
     id: 'iss-12-4',
@@ -59,7 +61,20 @@ export const issues = [
     status: 'scheduled',
     publicationDate: '2026-12-15',
     editorId: 'u-ed-3',
-    articleIds: ['JASSD-2026-0131'],
+    articleIds: ['JASSD-2026-0131', 'JASSD-2026-0126'],
+  },
+  {
+    id: 'iss-12-5',
+    volume: '12',
+    number: '5',
+    year: '2026',
+    title: 'Water Resources and Environmental Systems',
+    description:
+      'A forthcoming issue on freshwater availability, irrigation efficiency and environmental systems. Scheduled for March 2027.',
+    status: 'scheduled',
+    publicationDate: '2027-03-15',
+    editorId: 'u-ed-6',
+    articleIds: ['JASSD-2026-0140'],
   },
   {
     id: 'iss-13-1',
@@ -70,7 +85,7 @@ export const issues = [
     description: 'Planned general issue for Volume 13. Not yet open for submissions.',
     status: 'draft',
     editorId: null,
-    articleIds: ['JASSD-2026-0126'],
+    articleIds: [],
   },
 ]
 
